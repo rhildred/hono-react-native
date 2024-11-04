@@ -1,5 +1,8 @@
 import { serve, ServerType } from "@hono/node-server"
 import app from './index'
+import { serveStatic } from "@hono/node-server/serve-static"
+
+app.use("/*", serveStatic({ root: "public/"})) // path must end with '/'
 declare global {
     var server: ServerType;
 }
