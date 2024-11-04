@@ -13,4 +13,6 @@ app.get('/message', (c) => {
   return c.text("Rich was here!")
 })
 
+app.get("/message2", c => c.text("Really he was ... Wasn't he?"));
+
 export default app
