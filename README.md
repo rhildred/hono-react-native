@@ -1,2 +1,8 @@
-# hono-react-native
-hono react native project with continuous deployment to cloudflare pages
+```txt
+npm install
+npm run dev
+```
+
+```txt
+npm run deploy
+```
